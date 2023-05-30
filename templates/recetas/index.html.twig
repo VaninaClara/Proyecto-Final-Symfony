@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Recetario CheOlé{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    {% block stylesheets %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+</head>
+<body>
+<div class="container">
+    <img src="{{ asset('assets/recetario-logo.png') }}" alt="logo">
+    <nav class="navbar">
+        <a href="{{ path('app-recetas') }}">Inicio</a>
+        <a href="{{ path('listado-recetas') }}">Lista de recetas</a>
+        <a href="{{ path('subir-receta') }}">Subir receta</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    {% block js %}{% endblock %}
+</div>
+</body>
+</html>
+

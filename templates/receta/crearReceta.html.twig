@@ -1,0 +1,15 @@
+{% extends 'recetas/index.html.twig' %}
+
+{% block title %}Subir receta{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h1 class="titulo-receta">Crear Receta</h1>
+    {{ form_start(recetaForm, {'attr': {'class': 'form-estilo'}}) }}
+        {{ form_widget(recetaForm) }}
+    {{ form_end(recetaForm) }}
+{% endblock %}

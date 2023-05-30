@@ -1,0 +1,50 @@
+:root {
+    --argentina-color: #75AADB; 
+    --spain-color: #C60B1E; 
+    --card-width: 80%;
+    --card-bg-color: #f2f2f2;
+    --card-border-radius: 15px;
+    --card-shadow-color: rgba(0, 0, 0, 0.15);
+    --card-transition-duration: 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+    background: linear-gradient(to right, var(--argentina-color), var(--spain-color)); 
+    color: white; 
+}
+
+.navbar a {
+    font-size: 30px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar a:last-child {
+    margin-right: 0;
+}
+
+.form-estilo {
+    width: var(--card-width) !important;
+    background-color: var(--card-bg-color) !important;
+    border-radius: var(--card-border-radius) !important;
+    box-shadow: 0px 0px 10px var(--card-shadow-color) !important;
+    transition: var(--card-transition-duration) !important;
+}
+

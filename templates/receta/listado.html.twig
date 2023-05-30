@@ -1,0 +1,17 @@
+{% extends 'recetas/index.html.twig' %}
+
+{% block title %}Listado de recetas{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/listado.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1 class="titulo-receta">Lista de recetas</h1>
+<ul>
+{% for receta in recetas %}
+   <li class="item-receta">{{ receta.titulo }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
