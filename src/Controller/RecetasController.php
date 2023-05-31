@@ -15,9 +15,7 @@ class RecetasController extends AbstractController
     #[Route('/', name: 'app-recetas')]
     public function index(): Response
     {
-        return $this->render('recetas/index.html.twig', [
-            'controller_name' => 'RecetasController',
-        ]);
+        return $this->render('recetas/index.html.twig');
     }   
 
     #[Route("/insert/receta")]
@@ -64,4 +62,10 @@ class RecetasController extends AbstractController
 
          return $this->render('receta/listado.html.twig',["recetas" => $recetas]);
     }
+
+    #[Route("/contacto", name:"contacto-recetas")]
+    public function contact(): Response
+    {
+        return $this->render('contacto/contacto.html.twig');
+    }  
 }

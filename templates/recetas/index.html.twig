@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Recetario CheOlé{% endblock %}</title>
+    
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     {% block stylesheets %}{% endblock %}
     {% block javascripts %}{% endblock %}
@@ -14,11 +15,27 @@
         <a href="{{ path('app-recetas') }}">Inicio</a>
         <a href="{{ path('listado-recetas') }}">Lista de recetas</a>
         <a href="{{ path('subir-receta') }}">Subir receta</a>
-        <a href="#">Contacto</a>
+        <a href="{{ path('contacto-recetas') }}">Contacto</a>
     </nav>
-    <div class="container">
-        {% block content %}{% endblock %}
+    {% block content %}
+  <div class="container_text">
+      <div class="home-text">
+        <h1>¡Bienvenid@ a Recetario CheOlé!</h1>
+        <p>Aquí celebramos la rica diversidad de la gastronomía de dos vibrantes países: Argentina y España. Ambos países tienen una larga tradición culinaria y una increíble variedad de platos que reflejan la historia, la geografía y la cultura de sus respectivas regiones.
+        En Argentina, la carne de res es protagonista en muchos platos, como el famoso asado y el guiso carrero. Sin embargo, también hay una increíble variedad de otros platos, incluyendo empanadas, locro y dulce de leche.
+
+        Por otro lado, la cocina española es famosa por su tapas, paella y gazpacho. Pero también hay una impresionante diversidad regional, con platos como la fabada asturiana del norte, el salmorejo cordobés del sur y la tortilla española que se encuentra en todo el país.
+
+        En Recetario CheOlé, te invitamos a explorar estas maravillosas tradiciones culinarias. Aquí encontrarás recetas auténticas, desde las más tradicionales hasta las más innovadoras, todas ellas con un toque personal. Ya sea que estés buscando un plato de comfort food para un día frío, una receta festiva para una celebración especial, o simplemente algo nuevo y emocionante para probar en la cocina, estamos seguros de que encontrarás algo que te encantará.
+        </p>
+        <h2>¡Así que ponte el delantal, prepara tus utensilios de cocina y prepárate para un viaje culinario a través de Argentina y España!<br> ¡Vamos a cocinar!</h2>
     </div>
+    </div>
+    <div class="img-comidas">
+    <img src="{{ asset('assets/comidas.png') }}" alt="comidas">
+      </div>
+  </div>
+     {% endblock %}
     {% block js %}{% endblock %}
 </div>
 </body>

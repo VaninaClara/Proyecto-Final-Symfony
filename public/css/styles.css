@@ -47,4 +47,82 @@
     box-shadow: 0px 0px 10px var(--card-shadow-color) !important;
     transition: var(--card-transition-duration) !important;
 }
+.container_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1); 
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+
+.home-text h1 {
+    color: var(--argentina-color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home-text h2 {
+    color: var(--spain-color);
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-text p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-size: 30px;
+    text-align: center;
+    overflow: auto;
+}
+
+.img-comidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .home-text p {
+        font-size: 18px; 
+    }
+
+    .container_text {
+        width: 100%; 
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .home-text p {
+        font-size: 24px; 
+    }
+
+    .container_text {
+        width: 90%; 
+    }
+}
+
+
+@media only screen and (min-width: 901px) {
+    .home-text p {
+        font-size: 30px; 
+    }
+
+    .container_text {
+        width: 80%; 
+    }
+}
+}
 

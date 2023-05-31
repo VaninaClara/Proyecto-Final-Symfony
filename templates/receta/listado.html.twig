@@ -11,7 +11,7 @@
 <h1 class="titulo-receta">Lista de recetas</h1>
 <ul>
 {% for receta in recetas %}
-   <li class="item-receta">{{ receta.titulo }}</li>
+   <li class="item-receta">{{ receta.titulo }} - {{ receta.pais }}</li>
 {% endfor %}
 </ul>
 {% endblock %}

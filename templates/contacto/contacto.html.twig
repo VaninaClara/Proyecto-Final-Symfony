@@ -1,0 +1,18 @@
+{% extends 'recetas/index.html.twig' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/contacto.css') }}">
+{% endblock %}
+
+{% block content %}
+ <div class="container_contacto">
+    <h1 class="titulo">Vanina</h1>
+   <div class="parrafo">
+    <p class="item">Estudiante de Bootcamp FullStack.<br>
+    Este proyecto es parte del proceso de aprendizaje de Symphony y PHP.</p>
+ </div>
+ </div>   
+{% endblock %}

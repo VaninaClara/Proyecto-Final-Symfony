@@ -1,0 +1,29 @@
+:root {
+    --argentina-color: #75AADB; 
+    --spain-color: #C60B1E; 
+    --card-width: 80%;
+    --card-bg-color: #f2f2f2;
+    --card-border-radius: 15px;
+    --card-shadow-color: rgba(0, 0, 0, 0.15);
+    --card-transition-duration: 0.3s;
+}
+
+.container_contacto {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.titulo {
+    color: var(--argentina-color);
+    font-size: 50px;
+    text-align: center;
+}
+
+.item {
+    color: var(--spain-color);
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
